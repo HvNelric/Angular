@@ -1,0 +1,13 @@
+<div class="col-12">
+  <h3 class="col-12">Users :</h3>
+  <ul class="list-group">
+    <li
+      *ngFor="let user of users"
+      class="list-group-item">
+      {{user.name}}
+      <button
+              (click)="redi(user.name, user.id)"
+              class="btn btn-info ml-auto">edit</button>
+    </li>
+  </ul>
+</div>
